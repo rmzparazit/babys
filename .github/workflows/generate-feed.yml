@@ -1,4 +1,4 @@
-name: Генерация YML-фида Paomma
+name: Генерация YML-фида
 
 on:
   schedule:
@@ -33,7 +33,6 @@ jobs:
           python feed.py
 
       - name: 📂 Проверка, создан ли фид
-        if: success()
         run: |
           if [ ! -f "output/paomma_catalog.xml" ]; then
             echo "❌ Фид не был создан!"
@@ -42,10 +41,9 @@ jobs:
           echo "✅ Фид успешно сгенерирован"
 
       - name: 🌐 Настройка GitHub Pages
-        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           publish_branch: pages
-          commit_message: Обновление фида (авто) $(date)
+          commit_message: Обновление фида (авто) ${{ github.run_number }}
