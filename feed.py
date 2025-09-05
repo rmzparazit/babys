@@ -8,7 +8,7 @@ from datetime import datetime
 import hashlib
 
 # --- НАСТРОЙКИ ---
-OUTPUT_DIR = "output_paomma"
+OUTPUT_DIR = "output"
 PROGRESS_FILE = os.path.join(OUTPUT_DIR, "progress.json")
 YML_FILE = os.path.join(OUTPUT_DIR, "paomma_catalog.xml")
 
