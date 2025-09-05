@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<yml_catalog date="2025-09-05 20:49">
+<yml_catalog date="2025-09-05 21:15">
   <shop>
     <name>Paomma</name>
     <company>Paomma</company>
@@ -20,119 +20,37 @@
       <category id="876147046474">Бутылочки и молокоотсос</category>
     </categories>
     <offers>
-      <offer id="PDB114_" available="true">
-        <name>Поильник Zephyr</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PDB114</vendorCode>
-        <model>PDB114</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>952113747654</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/poilniki/tproduct/446814075272-poilnik-zephyr]]></url>
-        <picture>https://static.tildacdn.com/stor6239-6333-4263-a638-643937323932/37679080.jpg</picture>
-        <param name="Цвет">Розовый</param>
-        <param name="Материал">Полипропилен</param>
-        <param name="Возраст">6+</param>
-        <param name="Состав">полипропилен, 100 % пищевой силикон</param>
-        <param name="collection">poilniki</param>
-        <collectionId>poilniki</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Розовый. Возраст: 6+. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PDB107_" available="true">
-        <name>Поильник Sage</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PDB107</vendorCode>
-        <model>PDB107</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>952113747654</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/poilniki/tproduct/954531354852-poilnik-sage]]></url>
-        <picture>https://static.tildacdn.com/stor6435-3537-4264-b832-626664646163/51430203.jpg</picture>
-        <param name="Цвет">Розовый</param>
-        <param name="Материал">Полипропилен</param>
-        <param name="Возраст">6+</param>
-        <param name="Состав">полипропилен, 100 % пищевой силикон</param>
-        <param name="collection">poilniki</param>
-        <collectionId>poilniki</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Розовый. Возраст: 6+. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PDB104_" available="true">
-        <name>Поильник Light grey</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PDB104</vendorCode>
-        <model>PDB104</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>952113747654</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/poilniki/tproduct/137553898672-poilnik-light-grey]]></url>
-        <picture>https://static.tildacdn.com/stor6265-6362-4465-b532-623230386137/11404690.jpg</picture>
-        <param name="Цвет">Розовый</param>
-        <param name="Материал">Полипропилен</param>
-        <param name="Возраст">6+</param>
-        <param name="Состав">полипропилен, 100 % пищевой силикон</param>
-        <param name="collection">poilniki</param>
-        <collectionId>poilniki</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Розовый. Возраст: 6+. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PDB104__1" available="true">
-        <name>Поильник Taupe</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PDB104</vendorCode>
-        <model>PDB104</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>952113747654</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/poilniki/tproduct/905758392282-poilnik-taupe]]></url>
-        <picture>https://static.tildacdn.com/stor3831-6631-4539-a563-346635353366/82987855.jpg</picture>
-        <param name="Цвет">Розовый</param>
-        <param name="Материал">Полипропилен</param>
-        <param name="Возраст">6+</param>
-        <param name="Состав">полипропилен, 100 % пищевой силикон</param>
-        <param name="collection">poilniki</param>
-        <collectionId>poilniki</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Розовый. Возраст: 6+. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PT104_" available="true">
+      <offer id="PAO_E7D6A5" available="true">
         <name>Прорезыватель Zephyr</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PT104</vendorCode>
-        <model>PT104</model>
+        <vendorCode>PAO_E7D6A5</vendorCode>
+        <model>PAO_E7D6A5</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>206682998845</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/prorezyvateli/tproduct/673104930012-prorezivatel-zephyr]]></url>
         <picture>https://static.tildacdn.com/stor3361-3765-4330-b439-633663383030/73046543.jpg</picture>
-        <param name="Цвет">Розовый</param>
-        <param name="Материал">Силикон</param>
-        <param name="Возраст">6+</param>
         <param name="collection">prorezyvateli</param>
         <collectionId>prorezyvateli</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Розовый. Возраст: 6+. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PT104__1" available="true">
+      <offer id="PAO_98FD24" available="true">
         <name>Прорезыватель Лошадка Taupe</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PT104</vendorCode>
-        <model>PT104</model>
+        <vendorCode>PAO_98FD24</vendorCode>
+        <model>PAO_98FD24</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>206682998845</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/prorezyvateli/tproduct/332946794622-prorezivatel-loshadka-taupe]]></url>
         <picture>https://static.tildacdn.com/stor3961-6430-4637-b363-396166656561/72004487.jpg</picture>
-        <param name="Цвет">Коричневый</param>
-        <param name="Материал">Силикон</param>
-        <param name="Возраст">6+</param>
         <param name="collection">prorezyvateli</param>
         <collectionId>prorezyvateli</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Коричневый. Возраст: 6+. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PT104__2" available="true">
+      <offer id="PT104_" available="true">
         <name>Прорезыватель Лошадка Almond milk</name>
         <vendor>Paomma</vendor>
         <vendorCode>PT104</vendorCode>
@@ -166,39 +84,35 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Возраст: 3-6. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PN00L" available="true">
+      <offer id="PAO_0B4BD1" available="true">
         <name>Соска на бутылочку mom effect, быстрый поток</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PN00L</vendorCode>
-        <model>PN00L</model>
+        <vendorCode>PAO_0B4BD1</vendorCode>
+        <model>PAO_0B4BD1</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>169064286158</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/antikolikovye-soski/tproduct/676081451632-soska-na-butilochku-mom-effect-bistrii-p]]></url>
         <picture>https://static.tildacdn.com/stor3061-3832-4161-b063-346563636632/59283496.jpg</picture>
-        <param name="Материал">Силикон</param>
-        <param name="Возраст">6-9</param>
         <param name="collection">soski</param>
         <collectionId>soski</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Возраст: 6-9. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PN00S" available="true">
+      <offer id="PAO_A2CB7F" available="true">
         <name>Соска на бутылочку mom effect, медленный поток</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PN00S</vendorCode>
-        <model>PN00S</model>
+        <vendorCode>PAO_A2CB7F</vendorCode>
+        <model>PAO_A2CB7F</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>169064286158</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/antikolikovye-soski/tproduct/238357685202-soska-na-butilochku-mom-effect-medlennii]]></url>
         <picture>https://static.tildacdn.com/stor3061-3832-4161-b063-346563636632/59283496.jpg</picture>
-        <param name="Материал">Силикон</param>
-        <param name="Возраст">0-3</param>
         <param name="collection">soski</param>
         <collectionId>soski</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Возраст: 0-3. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PN00CH" available="true">
         <name>Соска на бутылочку mom effect, для жидких каш</name>
@@ -236,24 +150,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Бежевый. Возраст: 18-36. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL11214_" available="true">
+      <offer id="PAO_A0F720" available="true">
         <name>Набор латексная пустышек Buttercream/zephyr</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL11214</vendorCode>
-        <model>PPL11214</model>
+        <vendorCode>PAO_A0F720</vendorCode>
+        <model>PAO_A0F720</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>876147046474</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/878969489192-nabor-lateksnaya-pustishek-buttercreamze]]></url>
         <picture>https://static.tildacdn.com/stor3463-6133-4266-a638-656336343363/13492315.jpg</picture>
-        <param name="Цвет">Бежевый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">18-36</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Бежевый. Возраст: 18-36. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPL11207_" available="true">
         <name>Набор латексная пустышек Buttercream/sage</name>
@@ -293,24 +203,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Коричневый. Возраст: 6-18. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL121_" available="true">
+      <offer id="PAO_520497" available="true">
         <name>Пустышка латексная Mushroom</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL121</vendorCode>
-        <model>PPL121</model>
+        <vendorCode>PAO_520497</vendorCode>
+        <model>PAO_520497</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/961343887952-pustishka-lateksnaya-mushroom]]></url>
         <picture>https://static.tildacdn.com/stor3130-6331-4262-b464-633432663565/66055803.jpg</picture>
-        <param name="Цвет">Коричневый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">0-6</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Коричневый. Возраст: 0-6. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPS12112_" available="true">
         <name>Набор силиконовых пустышек Mushroom/Almond milk</name>
@@ -368,62 +274,50 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Бежевый. Возраст: 18-36. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL216_" available="true">
+      <offer id="PAO_0B91D8" available="true">
         <name>Пустышка латексная Hazelnut</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL216</vendorCode>
-        <model>PPL216</model>
+        <vendorCode>PAO_0B91D8</vendorCode>
+        <model>PAO_0B91D8</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/804334575132-pustishka-lateksnaya-hazelnut]]></url>
         <picture>https://static.tildacdn.com/stor6462-3832-4737-b030-363339333735/24342569.jpg</picture>
-        <param name="Цвет">Бежевый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">6-18</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Бежевый. Возраст: 6-18. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL316__1" available="true">
+      <offer id="PAO_89C535" available="true">
         <name>Пустышка латексная Hazelnut</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL316</vendorCode>
-        <model>PPL316</model>
+        <vendorCode>PAO_89C535</vendorCode>
+        <model>PAO_89C535</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/660911637722-pustishka-lateksnaya-hazelnut]]></url>
         <picture>https://static.tildacdn.com/stor3137-3366-4866-b735-633336616432/13735558.jpg</picture>
-        <param name="Цвет">Бежевый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">0-6</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Бежевый. Возраст: 0-6. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL315_" available="true">
+      <offer id="PAO_1ACC4E" available="true">
         <name>Пустышка латексная Light grey</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL315</vendorCode>
-        <model>PPL315</model>
+        <vendorCode>PAO_1ACC4E</vendorCode>
+        <model>PAO_1ACC4E</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/149464569042-pustishka-lateksnaya-light-grey]]></url>
         <picture>https://static.tildacdn.com/stor3536-6439-4666-b739-633234333732/38206613.jpg</picture>
-        <param name="Цвет">Светло-серый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">18-36</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Светло-серый. Возраст: 18-36. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPL215_" available="true">
         <name>Пустышка латексная Light grey</name>
@@ -480,24 +374,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Кремовый. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL212_" available="true">
+      <offer id="PAO_70DF43" available="true">
         <name>Пустышка латексная Buttercream</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL212</vendorCode>
-        <model>PPL212</model>
+        <vendorCode>PAO_70DF43</vendorCode>
+        <model>PAO_70DF43</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/483233768842-pustishka-lateksnaya-buttercream]]></url>
         <picture>https://static.tildacdn.com/stor3038-3431-4334-a566-373635646632/85568707.jpg</picture>
-        <param name="Цвет">Кремовый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">6-18</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Кремовый. Возраст: 6-18. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPL112_" available="true">
         <name>Пустышка латексная Buttercream</name>
@@ -556,24 +446,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Коричневый. Возраст: 0-6. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL213_" available="true">
+      <offer id="PAO_82EF32" available="true">
         <name>Пустышка латексная Baby Blue</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL213</vendorCode>
-        <model>PPL213</model>
+        <vendorCode>PAO_82EF32</vendorCode>
+        <model>PAO_82EF32</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/488827679752-pustishka-lateksnaya-baby-blue]]></url>
         <picture>https://static.tildacdn.com/stor3533-6438-4461-b262-366432303032/60136537.jpg</picture>
-        <param name="Цвет">Небесно-голубой</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">6-18</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Небесно-голубой. Возраст: 6-18. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPL113_" available="true">
         <name>Пустышка латексная Baby Blue</name>
@@ -613,24 +499,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Черный. Возраст: 18-36. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL211_" available="true">
+      <offer id="PAO_593D57" available="true">
         <name>Пустышка латексная Black</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL211</vendorCode>
-        <model>PPL211</model>
+        <vendorCode>PAO_593D57</vendorCode>
+        <model>PAO_593D57</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/723420481262-pustishka-lateksnaya-black]]></url>
         <picture>https://static.tildacdn.com/stor6466-3035-4637-a661-653135323836/77704605.jpg</picture>
-        <param name="Цвет">Черный</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">6-18</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Черный. Возраст: 6-18. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPL111_" available="true">
         <name>Пустышка латексная Black</name>
@@ -651,24 +533,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Черный. Возраст: 0-3. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL204_" available="true">
+      <offer id="PAO_04E753" available="true">
         <name>Пустышка латексная Zephyr</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL204</vendorCode>
-        <model>PPL204</model>
+        <vendorCode>PAO_04E753</vendorCode>
+        <model>PAO_04E753</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/406512194522-pustishka-lateksnaya-zephyr]]></url>
         <picture>https://static.tildacdn.com/stor3338-3131-4634-a531-636466393731/66397831.jpg</picture>
-        <param name="Цвет">Розовый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">6-18</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Розовый. Возраст: 6-18. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPL104_" available="true">
         <name>Пустышка латексная Zephyr</name>
@@ -708,24 +586,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Зеленовато-серый. Возраст: 18-36. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPL207_" available="true">
+      <offer id="PAO_31EE52" available="true">
         <name>Пустышка латексная Sage</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPL207</vendorCode>
-        <model>PPL207</model>
+        <vendorCode>PAO_31EE52</vendorCode>
+        <model>PAO_31EE52</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>897379413064</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/419134902162-pustishka-lateksnaya-sage]]></url>
         <picture>https://static.tildacdn.com/stor6330-6466-4238-b866-316335353162/49924321.jpg</picture>
-        <param name="Цвет">Зеленовато-серый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Латекс</param>
-        <param name="Возраст">6-18</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Зеленовато-серый. Возраст: 6-18. Материал: Латекс. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPL107_" available="true">
         <name>Пустышка латексная Sage</name>
@@ -765,59 +639,50 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Светло-серый. Возраст: 6-18. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPS11216_" available="true">
+      <offer id="PAO_BA609E" available="true">
         <name>Набор силиконовых пустышек Light grey/buttercream</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPS11216</vendorCode>
-        <model>PPS11216</model>
+        <vendorCode>PAO_BA609E</vendorCode>
+        <model>PAO_BA609E</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>876147046474</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/744248685062-nabor-silikonovih-pustishek-light-greybu]]></url>
         <picture>https://static.tildacdn.com/stor6139-3131-4663-a261-353939626330/71426040.jpg</picture>
-        <param name="Цвет">Светло-серый</param>
-        <param name="Материал">Силикон</param>
-        <param name="Возраст">0-6</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Светло-серый. Возраст: 0-6. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPS11716_" available="true">
+      <offer id="PAO_75B79E" available="true">
         <name>Набор силиконовых пустышек "Navy/hazelnut"</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPS11716</vendorCode>
-        <model>PPS11716</model>
+        <vendorCode>PAO_75B79E</vendorCode>
+        <model>PAO_75B79E</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>876147046474</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/295747436492-nabor-silikonovih-pustishek-navyhazelnut]]></url>
         <picture>https://static.tildacdn.com/stor3633-6664-4432-b434-633333636461/73234917.jpg</picture>
-        <param name="Цвет">Темно-синий</param>
-        <param name="Материал">Силикон</param>
-        <param name="Возраст">6-18</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Темно-синий. Возраст: 6-18. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPS21716_" available="true">
+      <offer id="PAO_B2C396" available="true">
         <name>Набор силиконовых пустышек Navy/hazelnut</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPS21716</vendorCode>
-        <model>PPS21716</model>
+        <vendorCode>PAO_B2C396</vendorCode>
+        <model>PAO_B2C396</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>876147046474</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/262800352952-nabor-silikonovih-pustishek-navyhazelnut]]></url>
         <picture>https://static.tildacdn.com/stor3539-3136-4164-a334-376665343737/42698291.jpg</picture>
-        <param name="Цвет">Темно-синий</param>
-        <param name="Материал">Силикон</param>
-        <param name="Возраст">0-6</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Темно-синий. Возраст: 0-6. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PPS11811_" available="true">
         <name>Набор силиконовых пустышек Black/almond milk</name>
@@ -873,108 +738,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Розовый. Возраст: 6-18. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PPS11412_" available="true">
+      <offer id="PAO_6B1650" available="true">
         <name>Набор силиконовых пустышек Zephyr/buttercream</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PPS11412</vendorCode>
-        <model>PPS11412</model>
+        <vendorCode>PAO_6B1650</vendorCode>
+        <model>PAO_6B1650</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>876147046474</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/pustyshki/tproduct/318191461312-nabor-silikonovih-pustishek-zephyrbutter]]></url>
         <picture>https://static.tildacdn.com/stor3463-3639-4735-b264-623632373961/99052104.jpg</picture>
-        <param name="Цвет">Розовый</param>
-        <param name="Материал">Силикон</param>
-        <param name="Возраст">0-6</param>
         <param name="collection">pustyshki</param>
         <collectionId>pustyshki</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Розовый. Возраст: 0-6. Материал: Силикон. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PCL10705_" available="true">
-        <name>Набор держателей для пустышки</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PCL10705</vendorCode>
-        <model>PCL10705</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>876147046474</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/derzhateli-dlya-pustyshek/tproduct/548634140082-nabor-derzhatelei-dlya-pustishki]]></url>
-        <picture>https://static.tildacdn.com/stor6435-3566-4239-a633-346262363137/93763419.jpg</picture>
-        <param name="Цвет">Коричневый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="collection">derzhateli</param>
-        <collectionId>derzhateli</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Коричневый. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PCL11816_" available="true">
-        <name>Набор держателей для пустышки</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PCL11816</vendorCode>
-        <model>PCL11816</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>876147046474</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/derzhateli-dlya-pustyshek/tproduct/655345841832-nabor-derzhatelei-dlya-pustishki]]></url>
-        <picture>https://static.tildacdn.com/stor3239-3638-4234-a137-376162356561/91139916.jpg</picture>
-        <param name="Цвет">Розовый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="collection">derzhateli</param>
-        <collectionId>derzhateli</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Розовый. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PCL11816__1" available="true">
-        <name>Набор держателей для пустышки</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PCL11816</vendorCode>
-        <model>PCL11816</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>876147046474</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/derzhateli-dlya-pustyshek/tproduct/479499685362-nabor-derzhatelei-dlya-pustishki]]></url>
-        <picture>https://static.tildacdn.com/stor6362-3734-4337-b561-353062376263/15811499.jpg</picture>
-        <param name="Цвет">Кремовый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="collection">derzhateli</param>
-        <collectionId>derzhateli</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Кремовый. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PCL10716_" available="true">
-        <name>Набор держателей для пустышки</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PCL10716</vendorCode>
-        <model>PCL10716</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>876147046474</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/derzhateli-dlya-pustyshek/tproduct/816232372412-nabor-derzhatelei-dlya-pustishki]]></url>
-        <picture>https://static.tildacdn.com/stor3134-3830-4831-b164-313662633965/79964758.jpg</picture>
-        <param name="Цвет">Светло-серый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="collection">derzhateli</param>
-        <collectionId>derzhateli</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Светло-серый. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PCL11816__2" available="true">
-        <name>Набор держателей для пустышки</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PCL11816</vendorCode>
-        <model>PCL11816</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>876147046474</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/derzhateli-dlya-pustyshek/tproduct/735144824872-nabor-derzhatelei-dlya-pustishki]]></url>
-        <picture>https://static.tildacdn.com/stor6234-6638-4738-b961-393366636339/31102834.jpg</picture>
-        <param name="Цвет">Светло-серый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="collection">derzhateli</param>
-        <collectionId>derzhateli</collectionId>
-        <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Светло-серый. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PC105_" available="true">
         <name>Футляр для пустышки Taupe</name>
@@ -994,23 +771,20 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Коричневый. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PC108_" available="true">
+      <offer id="PAO_322B1E" available="true">
         <name>Футляр для пустышки Sage</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PC108</vendorCode>
-        <model>PC108</model>
+        <vendorCode>PAO_322B1E</vendorCode>
+        <model>PAO_322B1E</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>571209369666</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/konteyner-dlya-pustyshek/tproduct/146781531402-futlyar-dlya-pustishki-sage]]></url>
         <picture>https://static.tildacdn.com/stor6532-3261-4766-a238-346566326632/65663575.jpg</picture>
-        <param name="Цвет">Зеленовато-серый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Материал">Полипропилен</param>
         <param name="collection">futlyary</param>
         <collectionId>futlyary</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Зеленовато-серый. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PC112_" available="true">
         <name>Футляр для пустышки Buttercream</name>
@@ -1085,43 +859,35 @@
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
         <sales_notes>Цвет: Зеленовато-серый. Объём: 270 мл. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PMC112_" available="true">
+      <offer id="PAO_7673AF" available="true">
         <name>Контейнер для сухой молочной смеси Buttercream</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PMC112</vendorCode>
-        <model>PMC112</model>
+        <vendorCode>PAO_7673AF</vendorCode>
+        <model>PAO_7673AF</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>952891154747</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/konteynery-dlya-smesi/tproduct/501558429772-konteiner-dlya-suhoi-molochnoi-smesi-but]]></url>
         <picture>https://static.tildacdn.com/stor3063-3731-4832-a162-626537373537/36498969.jpg</picture>
-        <param name="Цвет">Кремовый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Объём">270 мл</param>
-        <param name="Материал">Полипропилен</param>
         <param name="collection">smesi</param>
         <collectionId>smesi</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Кремовый. Объём: 270 мл. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PMC115_" available="true">
+      <offer id="PAO_072C3B" available="true">
         <name>Контейнер для сухой молочной смеси Light grey</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PMC115</vendorCode>
-        <model>PMC115</model>
+        <vendorCode>PAO_072C3B</vendorCode>
+        <model>PAO_072C3B</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>952891154747</categoryId>
         <url><![CDATA[https://paomma.ru/catalog/konteynery-dlya-smesi/tproduct/732244182012-konteiner-dlya-suhoi-molochnoi-smesi-lig]]></url>
         <picture>https://static.tildacdn.com/stor6239-6637-4466-a661-366437386334/70199753.jpg</picture>
-        <param name="Цвет">Светло-серый</param>
-        <param name="Размер">Длина: 9 см</param>
-        <param name="Объём">270 мл</param>
-        <param name="Материал">Полипропилен</param>
         <param name="collection">smesi</param>
         <collectionId>smesi</collectionId>
         <description>Качественный товар для детей от бренда Paomma. Подходит с рождения.</description>
-        <sales_notes>Цвет: Светло-серый. Объём: 270 мл. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
+        <sales_notes>Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PMC104_" available="true">
         <name>Контейнер для сухой молочной смеси Taupe</name>
@@ -1179,25 +945,6 @@
         <collectionId>butylochki</collectionId>
         <description>Материал бутылочки: 100% полипропилен. Объем: 240 мл. Особенности: Антиколиковая. Высота: 17 см. Диаметр горлышка: 5 см. Диаметр широкой части бутылочки: 7,5 см. Поток: Средний поток: размер М. Материал соски: 100% пищевой силикон. Высота соски. 6,5 см. Диаметр соски: 5 см. Вес. 89 г. Длина упаковки: 9 см. Высота упаковки: 17 см. Ширина упаковки: 12 см.</description>
         <sales_notes>Цвет: Buttercream (Сливочный). Объём: 240 мл. Возраст: 0-6. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
-      </offer>
-      <offer id="PB104_taupe" available="true">
-        <name>Пластиковая бутылочка Taupe, 180 мл</name>
-        <vendor>Paomma</vendor>
-        <vendorCode>PB104</vendorCode>
-        <model>PB104</model>
-        <price>0</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>876147046474</categoryId>
-        <url><![CDATA[https://paomma.ru/catalog/butylochki-dlya-kormleniya/pb104]]></url>
-        <picture>https://static.tildacdn.com/stor6335-3438-4534-b530-383336643865/16594418.jpg</picture>
-        <param name="Цвет">Taupe (Тауп)</param>
-        <param name="Объём">180 мл</param>
-        <param name="Материал">Полипропилен</param>
-        <param name="Возраст">0-3</param>
-        <param name="collection">butylochki</param>
-        <collectionId>butylochki</collectionId>
-        <description>Материал бутылочки: 100% полипропилен. Объем: 180 мл. Особенности: Антиколиковая. Высота: 14 см. Диаметр горлышка: 5 см. Диаметр широкой части бутылочки: 7,5 см. Поток: Медленный поток: размер S. Материал соски: 100% пищевой силикон. Высота соски. 6,5 см. Диаметр соски: 5 см. Вес. 79 г. Длина упаковки: 9 см. Высота упаковки: 17 см. Ширина упаковки: 12 см.</description>
-        <sales_notes>Цвет: Taupe (Тауп). Объём: 180 мл. Возраст: 0-3. Материал: Полипропилен. Официальный сайт Paomma.</sales_notes>
       </offer>
       <offer id="PB204_taupe" available="true">
         <name>Пластиковая бутылочка Taupe, 240 мл</name>
@@ -1383,11 +1130,11 @@
         <description>Стеклянная бутылочка Paomma объёмом 160 мл. Изготовлена из прочного стекла, подходит для новорождённых. Антиколиковая система. Подходит для стерилизации.</description>
         <sales_notes>Объём: 160 мл. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PAO_A306AD" available="true">
+      <offer id="PAO_921333" available="true">
         <name>Стеклянная бутылочка Light grey, 240 мл</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PAO_A306AD</vendorCode>
-        <model>PAO_A306AD</model>
+        <vendorCode>PAO_921333</vendorCode>
+        <model>PAO_921333</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>876147046474</categoryId>
@@ -1520,11 +1267,11 @@
         <description>Стеклянная бутылочка Paomma объёмом 160 мл. Изготовлена из прочного стекла, подходит для новорождённых. Антиколиковая система. Подходит для стерилизации.</description>
         <sales_notes>Объём: 160 мл. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PAO_6CC951" available="true">
+      <offer id="PAO_A57F40" available="true">
         <name>Стеклянная бутылочка Almond milk, 240 мл</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PAO_6CC951</vendorCode>
-        <model>PAO_6CC951</model>
+        <vendorCode>PAO_A57F40</vendorCode>
+        <model>PAO_A57F40</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>876147046474</categoryId>
@@ -1536,11 +1283,11 @@
         <description>Стеклянная бутылочка Paomma объёмом 240 мл. Изготовлена из прочного стекла, подходит для новорождённых. Антиколиковая система. Подходит для стерилизации.</description>
         <sales_notes>Объём: 240 мл. Официальный сайт Paomma.</sales_notes>
       </offer>
-      <offer id="PAO_B22E7E" available="true">
+      <offer id="PAO_95D7CF" available="true">
         <name>Стеклянная бутылочка Zephyr, 160 мл</name>
         <vendor>Paomma</vendor>
-        <vendorCode>PAO_B22E7E</vendorCode>
-        <model>PAO_B22E7E</model>
+        <vendorCode>PAO_95D7CF</vendorCode>
+        <model>PAO_95D7CF</model>
         <price>0</price>
         <currencyId>RUB</currencyId>
         <categoryId>876147046474</categoryId>
@@ -1557,7 +1304,6 @@
       <collection id="poilniki">
         <name>Поильники</name>
         <url><![CDATA[https://paomma.ru/catalog/poilniki]]></url>
-        <picture>https://static.tildacdn.com/stor6239-6333-4263-a638-643937323932/37679080.jpg</picture>
         <description>Поильники Paomma с защитой от протекания, силиконовой ручкой и антисорбционным клапаном. Подходят для детей от 6 месяцев. Без БФА и фталатов.</description>
       </collection>
       <collection id="prorezyvateli">
@@ -1581,7 +1327,6 @@
       <collection id="derzhateli">
         <name>Держатели</name>
         <url><![CDATA[https://paomma.ru/catalog/derzhateli-dlya-pustyshek]]></url>
-        <picture>https://static.tildacdn.com/stor6435-3566-4239-a633-346262363137/93763419.jpg</picture>
         <description>Держатели для пустышек Paomma с безопасным замком, регулируемой длиной. Из гипоаллергенных материалов. Не теряются.</description>
       </collection>
       <collection id="futlyary">
