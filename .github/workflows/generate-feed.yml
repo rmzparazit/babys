@@ -2,12 +2,8 @@ name: Генерация YML-фида
 
 on:
   schedule:
-    - cron: '0 21 * * 0'  # Каждое воскресенье в 00:00
+    - cron: '0 21 * * 0'  # Каждое воскресенье в 00:00 UTC
   workflow_dispatch:
-    inputs:
-      debug:
-        description: 'Запустить в режиме отладки'
-        required: false
 
 jobs:
   generate-feed:
@@ -15,35 +11,52 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - name: 🛎 Checkout кода
+      - name: 📥 Клонировать репозиторий
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_PAT }}  # ← Обязательно: PAT с правами push
 
-      - name: 🐍 Установка Python
+      - name: 🐍 Установить Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: 🔧 Установка зависимостей
+      - name: 📦 Установить зависимости
         run: |
           pip install -r requirements.txt
           playwright install chromium
 
-      - name: 🕹 Запуск парсера
+      - name: 🚀 Запустить скрипт
         run: |
           python feed.py
 
-      - name: 📂 Проверка, создан ли фид
+      - name: 🔍 Проверить, создан ли фид
         run: |
-          if [ ! -f "output/paomma_catalog.xml" ]; then
-            echo "❌ Фид не был создан!"
+          if [ -f "output/paomma_catalog.xml" ]; then
+            echo "✅ Фид создан, размер: $(wc -c < output/paomma_catalog.xml) байт"
+          else
+            echo "❌ Ошибка: фид не создан"
+            ls -la
+            ls -la output/ || true
             exit 1
           fi
-          echo "✅ Фид успешно сгенерирован"
 
-      - name: 🌐 Настройка GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
-          publish_branch: pages
-          commit_message: Обновление фида (авто) ${{ github.run_number }}
+      - name: 📤 Загрузить обновления
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Проверяем, изменился ли фид
+          if git diff --quiet output/paomma_catalog.xml; then
+            echo "ℹ️ Фид не изменился — коммит не нужен"
+            exit 0
+          fi
+
+          # Добавляем фид и резервную копию (опционально)
+          git add output/paomma_catalog.xml
+          git add output/paomma_catalog.xml.backup  # если есть
+          git add progress.json
+
+          git commit -m "Обновлён фид: $(date '+%Y-%m-%d %H:%M')"
+          git push
+          echo "✅ Фид обновлён и загружен"
