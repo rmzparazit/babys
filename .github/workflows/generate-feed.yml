@@ -1,0 +1,50 @@
+name: Генерация YML-фида
+
+on:
+  schedule:
+    # 🕰 Запуск каждую неделю в воскресенье в 00:00
+    - cron: '0 21 * * 0'
+  workflow_dispatch:  # Позволяет запустить вручную
+    inputs:
+      debug:
+        description: 'Запустить в режиме отладки'
+        required: false
+
+jobs:
+  generate-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 🛎 Checkout кода
+        uses: actions/checkout@v4
+
+      - name: 🐍 Установка Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 🔧 Установка зависимостей
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
+
+      - name: 🕹 Запуск парсера
+        run: |
+          python feed.py
+
+      - name: 📂 Проверка, создан ли фид
+        run: |
+          if [ ! -f "output/paomma_catalog.xml" ]; then
+            echo "❌ Фид не был создан!"
+            exit 1
+          fi
+          echo "✅ Фид успешно сгенерирован"
+
+      - name: 🌐 Настройка GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: pages  # Ветка для GitHub Pages
+          commit_message: Обновление фида (авто) $(date)
