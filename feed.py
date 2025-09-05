@@ -6,11 +6,13 @@ import os
 import re
 from datetime import datetime
 import hashlib
+import shutil
 
 # --- НАСТРОЙКИ ---
 OUTPUT_DIR = "output"
 PROGRESS_FILE = os.path.join(OUTPUT_DIR, "progress.json")
 YML_FILE = os.path.join(OUTPUT_DIR, "paomma_catalog.xml")
+TEMP_YML_FILE = YML_FILE + ".tmp"  # Для атомарной записи
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -76,8 +78,8 @@ def save_progress(products):
         seen = set()
         unique = []
         for p in clean:
-            link = p['link'].strip()
-            if not link or '#order' in link or '#catalog' in link or '#popup-buy' in link or link.endswith('#'):
+            link = p['link'].strip().split('#')[0]
+            if not link or '#order' in link or '#catalog' in link or '#popup-buy' in link or link.endswith('/'):
                 continue
             if link not in seen:
                 seen.add(link)
@@ -425,6 +427,15 @@ def get_collection_description(collection_id, products):
     }
     return key_features.get(collection_id, f"Коллекция: {COLLECTIONS.get(collection_id, {}).get('name', 'Товары')}")
 
+def is_feed_valid(lines):
+    """Проверяет, что фид имеет базовую структуру"""
+    content = '\n'.join(lines)
+    required = ['<yml_catalog', '<shop>', '<name>Paomma</name>', '<offers>', '</yml_catalog>']
+    for req in required:
+        if req not in content:
+            return False
+    return True
+
 def generate_yml(products):
     log("📝 Генерация YML-фида...")
 
@@ -438,7 +449,7 @@ def generate_yml(products):
         real_urls['Молокоотсосы'] = "https://paomma.ru/catalog/molokootsos"
 
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M")
-    lines = [
+    header_lines = [
         '<?xml version="1.0" encoding="utf-8"?>',
         f'<yml_catalog date="{current_date}">',
         '  <shop>',
@@ -465,13 +476,47 @@ def generate_yml(products):
     }
 
     for name, cat_id in cat_map.items():
-        lines.append(f'      <category id="{cat_id}">{name}</category>')
+        header_lines.append(f'      <category id="{cat_id}">{name}</category>')
 
-    lines += [
+    header_lines += [
         '    </categories>',
         '    <offers>'
     ]
 
+    footer_lines = [
+        '    </offers>',
+        '    <collections>'
+    ]
+
+    coll_images = get_collection_images(products)
+
+    for coll_key, coll_data in COLLECTIONS.items():
+        footer_lines.append(f'      <collection id="{coll_key}">')
+        footer_lines.append(f'        <name>{coll_data["name"]}</name>')
+        
+        real_url = real_urls.get(coll_data["name"])
+        if not real_url:
+            log(f"⚠️ Не найдена ссылка для коллекции: {coll_data['name']}")
+            real_url = f"https://paomma.ru/{coll_key}"
+        
+        url_cdata = f"<![CDATA[{real_url}]]>"
+        footer_lines.append(f'        <url>{url_cdata}</url>')
+        
+        if coll_images.get(coll_key):
+            footer_lines.append(f'        <picture>{coll_images[coll_key]}</picture>')
+        
+        coll_desc = get_collection_description(coll_key, products)
+        footer_lines.append(f'        <description>{coll_desc}</description>')
+        footer_lines.append('      </collection>')
+
+    footer_lines += [
+        '    </collections>',
+        '  </shop>',
+        '</yml_catalog>'
+    ]
+
+    # --- Сборка фида ---
+    offer_lines = []
     used_ids = set()
 
     for prod in products:
@@ -516,44 +561,46 @@ def generate_yml(products):
 
             used_ids.add(unique_id)
 
-            lines.append(f'      <offer id="{unique_id}" available="true">')
-            lines.append(f'        <name>{prod["name"]}</name>')
-            lines.append(f'        <vendor>Paomma</vendor>')
-            lines.append(f'        <vendorCode>{prod["vendorCode"]}</vendorCode>')
-            lines.append(f'        <model>{prod["vendorCode"]}</model>')
-            lines.append(f'        <price>0</price>')
-            lines.append(f'        <currencyId>RUB</currencyId>')
-            lines.append(f'        <categoryId>{category_id}</categoryId>')
+            offer = [
+                f'      <offer id="{unique_id}" available="true">',
+                f'        <name>{prod["name"]}</name>',
+                f'        <vendor>Paomma</vendor>',
+                f'        <vendorCode>{prod["vendorCode"]}</vendorCode>',
+                f'        <model>{prod["vendorCode"]}</model>',
+                f'        <price>0</price>',
+                f'        <currencyId>RUB</currencyId>',
+                f'        <categoryId>{category_id}</categoryId>'
+            ]
 
             url_cdata = f"<![CDATA[{prod['link'].strip()}]]>"
-            lines.append(f'        <url>{url_cdata}</url>')
+            offer.append(f'        <url>{url_cdata}</url>')
 
             if prod.get('image'):
-                lines.append(f'        <picture>{prod["image"].strip()}</picture>')
+                offer.append(f'        <picture>{prod["image"].strip()}</picture>')
             for img in prod.get('additional_images', []):
                 if img and img != prod.get('image'):
-                    lines.append(f'        <picture>{img.strip()}</picture>')
+                    offer.append(f'        <picture>{img.strip()}</picture>')
 
             if prod.get('color') and prod['color'] != 'Не указан':
-                clean_color = prod['color'].split(':')[0].split('/catalog')[0].strip()
-                lines.append(f'        <param name="Цвет">{translate_color(clean_color)}</param>')
+                clean_color = prod['color'].split(':')[0].strip()
+                offer.append(f'        <param name="Цвет">{translate_color(clean_color)}</param>')
             if prod.get('size'):
-                lines.append(f'        <param name="Размер">{prod["size"]}</param>')
+                offer.append(f'        <param name="Размер">{prod["size"]}</param>')
             if prod.get('volume'):
-                lines.append(f'        <param name="Объём">{prod["volume"]}</param>')
+                offer.append(f'        <param name="Объём">{prod["volume"]}</param>')
             if prod.get('material'):
-                lines.append(f'        <param name="Материал">{prod["material"]}</param>')
+                offer.append(f'        <param name="Материал">{prod["material"]}</param>')
             if prod.get('age'):
-                lines.append(f'        <param name="Возраст">{prod["age"]}</param>')
+                offer.append(f'        <param name="Возраст">{prod["age"]}</param>')
             if prod.get('handle'):
-                lines.append(f'        <param name="Ручки">{prod["handle"]}</param>')
+                offer.append(f'        <param name="Ручки">{prod["handle"]}</param>')
             if prod.get('composition'):
-                lines.append(f'        <param name="Состав">{prod["composition"]}</param>')
+                offer.append(f'        <param name="Состав">{prod["composition"]}</param>')
 
             coll_id = prod.get('collection')
             if coll_id and coll_id in COLLECTIONS:
-                lines.append(f'        <param name="collection">{coll_id}</param>')
-                lines.append(f'        <collectionId>{coll_id}</collectionId>')
+                offer.append(f'        <param name="collection">{coll_id}</param>')
+                offer.append(f'        <collectionId>{coll_id}</collectionId>')
 
             # --- DESCRIPTION: обработка по ключевым словам ---
             desc_parts = []
@@ -561,14 +608,9 @@ def generate_yml(products):
 
             if prod.get('description') and prod['description'].strip():
                 raw_desc = prod['description'].strip()
-                
-                # Удаляем артикул
                 clean_desc = re.sub(r'Артикул[:\s]+[A-Z0-9]+[\s]*', '', raw_desc, flags=re.IGNORECASE)
-                
-                # Заменяем табуляции и переносы на точки
                 clean_desc = re.sub(r'[\t\n\r]+', '. ', clean_desc)
-                
-                # Ключевые слова — сортированы по длине (чтобы "Диаметр горлышка" был до "Диаметр")
+
                 keywords = sorted([
                     'Диаметр горлышка', 'Диаметр широкой части бутылочки', 'Диаметр соски',
                     'Особенности', 'Высота', 'Поток', 'Материал соски', 'Материал бутылочки',
@@ -576,7 +618,6 @@ def generate_yml(products):
                     'Длина упаковки', 'Высота упаковки', 'Ширина упаковки', 'размер'
                 ], key=len, reverse=True)
 
-                # Экранируем и собираем паттерн
                 escaped = [re.escape(kw) for kw in keywords]
                 pattern = r'(' + '|'.join(escaped) + r')\.\s*([^.]*)'
 
@@ -587,7 +628,6 @@ def generate_yml(products):
 
                 clean_desc = re.sub(pattern, replace_match, clean_desc)
 
-                # Разбиваем по точкам
                 raw_params = [p.strip() for p in re.split(r'[.]', clean_desc) if p.strip()]
                 for param in raw_params:
                     if 'артикул' in param.lower():
@@ -597,7 +637,6 @@ def generate_yml(products):
                     elif param.strip():
                         desc_parts.append(param)
             else:
-                # Генерируем осмысленное описание
                 volume = prod.get('volume', '')
                 if "стеклянная бутылочка" in name:
                     desc = f"Стеклянная бутылочка Paomma объёмом {volume}. Изготовлена из прочного стекла, подходит для новорождённых. Антиколиковая система. Подходит для стерилизации."
@@ -612,10 +651,9 @@ def generate_yml(products):
                 description += "."
             description = re.sub(r'\.{2,}', '.', description)
             description = description.replace('&', '&amp;').replace('<', '<').replace('>', '>')
-            lines.append(f'        <description>{description}</description>')
+            offer.append(f'        <description>{description}</description>')
 
-
-            # --- SALES_NOTES: кратко, без дублирования ---
+            # --- SALES_NOTES ---
             sales_notes_parts = []
             if prod.get('color') and prod['color'] != 'Не указан':
                 clean_color = prod['color'].split(':')[0].strip()
@@ -632,50 +670,36 @@ def generate_yml(products):
                 sales_notes_parts.append("Официальный сайт Paomma")
 
             sales_notes = ". ".join(sales_notes_parts) + "."
-            lines.append(f'        <sales_notes>{sales_notes}</sales_notes>')
+            offer.append(f'        <sales_notes>{sales_notes}</sales_notes>')
+            offer.append('      </offer>')
 
-            lines.append('      </offer>')
+            offer_lines.extend(offer)
 
         except Exception as e:
             log(f"❌ Ошибка при генерации offer для {prod.get('name', 'unknown')}: {e}")
             continue
 
-    lines += [
-        '    </offers>',
-        '    <collections>'
-    ]
+    # --- Формирование финального фида ---
+    full_lines = header_lines + offer_lines + footer_lines
 
-    coll_images = get_collection_images(products)
+    if not is_feed_valid(full_lines):
+        log("❌ Фид не прошёл проверку валидности — не сохранён")
+        return
 
-    for coll_key, coll_data in COLLECTIONS.items():
-        lines.append(f'      <collection id="{coll_key}">')
-        lines.append(f'        <name>{coll_data["name"]}</name>')
-        
-        real_url = real_urls.get(coll_data["name"])
-        if not real_url:
-            log(f"⚠️ Не найдена ссылка для коллекции: {coll_data['name']}")
-            real_url = f"https://paomma.ru/{coll_key}"
-        
-        url_cdata = f"<![CDATA[{real_url}]]>"
-        lines.append(f'        <url>{url_cdata}</url>')
-        
-        if coll_images.get(coll_key):
-            lines.append(f'        <picture>{coll_images[coll_key]}</picture>')
-        
-        coll_desc = get_collection_description(coll_key, products)
-        lines.append(f'        <description>{coll_desc}</description>')
-        lines.append('      </collection>')
+    # --- Резервная копия ---
+    if os.path.exists(YML_FILE):
+        backup_name = YML_FILE + ".backup." + datetime.now().strftime("%Y%m%d_%H%M%S")
+        shutil.copy2(YML_FILE, backup_name)
+        log(f"📁 Создана резервная копия: {backup_name}")
 
-    lines += [
-        '    </collections>',
-        '  </shop>',
-        '</yml_catalog>'
-    ]
-
-    with open(YML_FILE, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines))
-
-    log(f"✅ YML-фид сохранён: {YML_FILE}")
+    # --- Атомарная запись ---
+    try:
+        with open(TEMP_YML_FILE, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(full_lines))
+        os.replace(TEMP_YML_FILE, YML_FILE)
+        log(f"✅ YML-фид успешно сохранён: {YML_FILE}")
+    except Exception as e:
+        log(f"❌ Ошибка при сохранении фида: {e}")
 
 # --- ЗАПУСК ---
 if __name__ == "__main__":
