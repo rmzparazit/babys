@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yml_catalog date="2025-09-05 21:41">
+  <shop>
+    <name>Paomma</name>
+    <company>Paomma</company>
+    <url>https://paomma.ru</url>
+    <platform>Tilda</platform>
+    <currencies>
+      <currency id="RUB" rate="1"/>
+    </currencies>
