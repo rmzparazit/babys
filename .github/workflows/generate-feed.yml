@@ -55,7 +55,7 @@ jobs:
           # Добавляем фид и резервную копию (опционально)
           git add output/paomma_catalog.xml
           git add output/paomma_catalog.xml.backup  # если есть
-          git add progress.json
+          git add output/progress.json
 
           git commit -m "Обновлён фид: $(date '+%Y-%m-%d %H:%M')"
           git push
