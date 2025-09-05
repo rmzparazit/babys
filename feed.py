@@ -688,7 +688,7 @@ def generate_yml(products):
 
     # --- Резервная копия ---
     if os.path.exists(YML_FILE):
-        backup_name = YML_FILE + ".backup." + datetime.now().strftime("%Y%m%d_%H%M%S")
+        backup_name = YML_FILE + ".backup."
         shutil.copy2(YML_FILE, backup_name)
         log(f"📁 Создана резервная копия: {backup_name}")
 
